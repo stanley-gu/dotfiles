@@ -1,0 +1,3 @@
+Bundle 'hallettj/jslint.vim'
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'digitaltoad/vim-jade'
