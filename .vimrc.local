@@ -4,6 +4,9 @@ colorscheme ir_black
 set tabstop=4
 set noexpandtab
 
+"To get NerdTree working
+let g:NERDTreeDirArrows=0
+
 "JsBeautify
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
 " for html
