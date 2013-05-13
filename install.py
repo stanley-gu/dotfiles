@@ -5,7 +5,7 @@ if __name__ == "__main__":
     # The first argument of sys.argv is always the filename,
     # meaning that the length of system arguments will be
     # more than one, when command-line arguments exist.
-    dotfiles = ['.vimrc.local', '.vimrc.bundles.local']
+    dotfiles = ['.vimrc.local', '.vimrc.bundles.local', '.editorconfig']
     for dotfile in dotfiles:
         try:
             source = os.path.dirname(os.path.realpath(__file__)) + '/' + dotfile
