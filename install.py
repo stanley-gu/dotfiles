@@ -8,7 +8,10 @@ if __name__ == "__main__":
     dotfiles = ['.vimrc.local', '.vimrc.bundles.local']
     for dotfile in dotfiles:
         try:
-            os.symlink('./' + dotfile, str(os.environ['HOME']))
+            source = os.path.dirname(os.path.realpath(__file__)) + '/' + dotfile
+            link = os.environ['HOME'] + '/' + dotfile
+            print 'Creating a symlink from ' + link + ' to ' + source
+            os.symlink(source, link)
         except OSError as e:
             print "Problem creating symlink for: {2} \n OSError error({0}): {1}".format(e.errno, e.strerror, dotfile)
     print "Finished running installer"
