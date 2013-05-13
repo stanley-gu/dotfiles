@@ -1,8 +1,8 @@
 colorscheme ir_black
 
 "Use tabs instead
-"set tabstop=4
-"set noexpandtab
+set tabstop=2
+set noexpandtab
 
 "To get NerdTree working
 let g:NERDTreeDirArrows=0
