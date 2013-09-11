@@ -1,8 +1,6 @@
-colorscheme ir_black
-
-"Use tabs instead
+"Use spaces instead
 set tabstop=2
-set noexpandtab
+set expandtab
 set shiftwidth=2
 set softtabstop=2
 
