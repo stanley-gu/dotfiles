@@ -18,6 +18,9 @@ if __name__ == "__main__":
             print("Problem creating symlink for:"
                   " {2} \n OSError error({0}): {1}").format(
                 e.errno, e.strerror, dotfile)
+            print 'Will try to overwrite this file'
+            os.unlink(link)
+            os.symlink(source, link)
             print '\n'
     subprocess.call(['sudo', 'npm', 'install', '-g', 'jshint',
                      'grunt-cli', 'bower'])
