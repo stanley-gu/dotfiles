@@ -7,6 +7,9 @@ set softtabstop=2
 "To get NerdTree working
 let g:NERDTreeDirArrows=0
 
+"JShint2
+let jshint2_save=1
+
 "JsBeautify
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
 " for html
