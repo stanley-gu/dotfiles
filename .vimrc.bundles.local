@@ -1,3 +1,2 @@
 Bundle 'maksimr/vim-jsbeautify'
-Bundle 'marijnh/tern_for_vim'
 Bundle 'Shutnik/jshint2.vim'

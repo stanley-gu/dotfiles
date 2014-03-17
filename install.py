@@ -22,10 +22,10 @@ if __name__ == "__main__":
             os.unlink(link)
             os.symlink(source, link)
             print '\n'
-    subprocess.call(['sudo', 'npm', 'install', '-g', 'jshint',
-                     'grunt-cli', 'bower'])
+    # subprocess.call(['sudo', 'npm', 'install', '-g', 'jshint',
+    #                  'grunt-cli', 'bower'])
     subprocess.call(['vim', '+BundleInstall', '+qall'])
-    subprocess.Popen(['npm', 'install'],
-                     cwd=os.environ['HOME'] +
-                     '/' + '.vim/bundle/tern_for_vim')
+    # subprocess.Popen(['npm', 'install'],
+    #                  cwd=os.environ['HOME'] +
+    #                  '/' + '.vim/bundle/tern_for_vim')
     print "Finished running installer"
