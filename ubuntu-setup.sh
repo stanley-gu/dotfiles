@@ -29,3 +29,7 @@ sudo pip install zerorpc
 curl -L http://install.ohmyz.sh | sh
 echo 'export LC_ALL="en_US.UTF8"' >> ~/.zshrc
 
+# git configs
+git config --global user.email stanleygu@gmail.com
+git config --global user.name "Stanley Gu"
+git config --global credential.helper cache
