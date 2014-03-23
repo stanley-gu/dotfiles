@@ -4,6 +4,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+"Language encoding
+set encoding=utf-8
+
 "To get NerdTree working and keep open
 let g:NERDTreeDirArrows=0
 let NERDTreeQuitOnOpen = 0
