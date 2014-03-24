@@ -19,6 +19,7 @@ sudo apt-get install -y -q build-essential
 sudo apt-get install -y -q git
 sudo apt-get install -y -q nodejs
 sudo apt-get install -y -q vim
+sudo apt-get install -y -q byobu
 # Install ZMQ
 sudo apt-get -y -q install libzmq3
 # Install ZeroRPC
@@ -28,6 +29,7 @@ sudo pip install zerorpc
 # oh my zsh
 curl -L http://install.ohmyz.sh | sh
 echo 'export LC_ALL="en_US.UTF8"' >> ~/.zshrc
+echo 'export TERM=xterm-256color' >> ~/.zshrc
 
 # git configs
 git config --global user.email stanleygu@gmail.com
