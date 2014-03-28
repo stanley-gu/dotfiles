@@ -20,6 +20,9 @@ sudo apt-get install -y -q git
 sudo apt-get install -y -q nodejs
 sudo apt-get install -y -q vim
 sudo apt-get install -y -q byobu
+sudo apt-get install -y -q ruby1.9.1
+sudo gem install compass
+
 # Install ZMQ
 sudo apt-get -y -q install libzmq3
 # Install ZeroRPC
