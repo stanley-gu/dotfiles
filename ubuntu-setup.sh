@@ -30,6 +30,7 @@ sudo apt-get install -y libevent-dev python-pip python-gevent msgpack-python
 sudo pip install zerorpc
 
 # oh my zsh
+sudo apt-get install zsh
 curl -L http://install.ohmyz.sh | sh
 echo 'export LC_ALL="en_US.UTF8"' >> ~/.zshrc
 echo 'export TERM=xterm-256color' >> ~/.zshrc
