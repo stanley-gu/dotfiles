@@ -9,7 +9,7 @@ set encoding=utf-8
 
 "To get NerdTree working and keep open
 let g:NERDTreeDirArrows=0
-let NERDTreeQuitOnOpen = 0
+let NERDTreeQuitOnOpen = 1
 
 
 "JShint2
