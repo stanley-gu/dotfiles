@@ -36,9 +36,11 @@ echo 'export LC_ALL="en_US.UTF8"' >> ~/.zshrc
 echo 'export TERM=xterm-256color' >> ~/.zshrc
 
 # byobu settings
+touch ~/.byobu/.tmux.conf
 echo 'set-option -g utf-8 on' >> ~/.byobu/.tmux.conf
 echo 'set-option -g default-shell /usr/bin/zsh' >> ~/.byobu/.tmux.conf
 echo 'set-option -g default-command /usr/bin/zsh' >> ~/.byobu/.tmux.conf
+echo 'set-option -g default-path "$PWD"' >> ~/.byobu/.tmux.conf
 
 # git configs
 git config --global user.email stanleygu@gmail.com
