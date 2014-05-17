@@ -44,3 +44,8 @@ echo 'set-option -g default-command /usr/bin/zsh' >> ~/.byobu/.tmux.conf
 git config --global user.email stanleygu@gmail.com
 git config --global user.name "Stanley Gu"
 git config --global credential.helper cache
+
+# Adding z
+git clone https://github.com/rupa/z.git/ ~/z
+echo '. ~/z/z.sh' >> ~/.zshrc
+
