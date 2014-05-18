@@ -36,11 +36,11 @@ echo 'export LC_ALL="en_US.UTF8"' >> ~/.zshrc
 echo 'export TERM=xterm-256color' >> ~/.zshrc
 
 # byobu settings
-touch ~/.byobu/.tmux.conf
-echo 'set-option -g utf-8 on' >> ~/.byobu/.tmux.conf
-echo 'set-option -g default-shell /usr/bin/zsh' >> ~/.byobu/.tmux.conf
-echo 'set-option -g default-command /usr/bin/zsh' >> ~/.byobu/.tmux.conf
-echo 'set-option -g default-path "$PWD"' >> ~/.byobu/.tmux.conf
+touch ~/.tmux.conf
+echo 'set-option -g utf-8 on' >> ~/.tmux.conf
+echo 'set-option -g default-shell /usr/bin/zsh' >> ~/.tmux.conf
+echo 'set-option -g default-command /usr/bin/zsh' >> ~/.tmux.conf
+echo 'set-option -g default-path "$PWD"' >> ~/.tmux.conf
 
 # git configs
 git config --global user.email stanleygu@gmail.com
@@ -50,4 +50,7 @@ git config --global credential.helper cache
 # Adding z
 git clone https://github.com/rupa/z.git/ ~/z
 echo '. ~/z/z.sh' >> ~/.zshrc
+
+# Adding spf13
+curl http://j.mp/spf13-vim3 -L -o - | sh
 
