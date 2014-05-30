@@ -23,6 +23,9 @@ sudo apt-get install -y -q byobu
 sudo apt-get install -y -q ruby1.9.1
 sudo gem install compass
 
+# Programming tools
+sudo apt-get install -q -y exuberant-ctags
+
 # Install ZMQ
 sudo apt-get -y -q install libzmq3
 # Install ZeroRPC
