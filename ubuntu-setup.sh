@@ -37,13 +37,14 @@ sudo apt-get install zsh
 curl -L http://install.ohmyz.sh | sh
 echo 'export LC_ALL="en_US.UTF8"' >> ~/.zshrc
 echo 'export TERM=xterm-256color' >> ~/.zshrc
+chsh -s /bin/zsh
 
 # byobu settings
-touch ~/.tmux.conf
-echo 'set-option -g utf-8 on' >> ~/.tmux.conf
-echo 'set-option -g default-shell /usr/bin/zsh' >> ~/.tmux.conf
-echo 'set-option -g default-command /usr/bin/zsh' >> ~/.tmux.conf
-echo 'set-option -g default-path "$PWD"' >> ~/.tmux.conf
+touch ~/.byobu/.tmux.conf
+echo 'set-option -g utf-8 on' >> ~/.byobu/.tmux.conf
+echo 'set-option -g default-shell /usr/bin/zsh' >> ~/.byobu/.tmux.conf
+echo 'set-option -g default-command /usr/bin/zsh' >> ~/.byobu/.tmux.conf
+echo 'set-option -g default-path "$PWD"' >> ~/.byobu/.tmux.conf
 
 # git configs
 git config --global user.email stanleygu@gmail.com
