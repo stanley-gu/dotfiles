@@ -40,6 +40,7 @@ echo 'export TERM=xterm-256color' >> ~/.zshrc
 chsh -s /bin/zsh
 
 # byobu settings
+mkdir -p ~/.byobu
 touch ~/.byobu/.tmux.conf
 echo 'set-option -g utf-8 on' >> ~/.byobu/.tmux.conf
 echo 'set-option -g default-shell /usr/bin/zsh' >> ~/.byobu/.tmux.conf
