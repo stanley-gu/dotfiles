@@ -5,13 +5,7 @@
 sudo apt-get update -qq
 
 # Installing packages
-sudo apt-get install -q -y curl
-sudo apt-get install -q -y wget
-sudo apt-get install -y -q python-pip
-sudo apt-get install -y -q python3-pip
-sudo apt-get install -y -q git
-sudo apt-get install -y -q vim
-sudo apt-get install -y -q byobu
+sudo apt-get install -q -y curl python-pip wget python3-pip git vim byobu
 
 # oh my zsh
 sudo apt-get install -q -y zsh
@@ -36,3 +30,10 @@ sh <(curl https://j.mp/spf13-vim3 -L)
 # Latex stuff
 sudo apt-get install -y -q texlive-latex-base texlive-xetex latex-xcolor texlive-math-extra \
     texlive-latex-extra texlive-fonts-extra texlive-bibtex-extra biber
+
+# Google Chrome
+cd /tmp
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get -f install
+sudo dpkg -i google-chrome-stable_current_amd64.deb
